@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.tonnom'
+version = '1.0'
+sourceCompatibility = '17'
+
+def paperVersion = '1.20.2-R0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.papermc.io/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:${paperVersion}"
+}
+
+jar {
+    archiveBaseName.set('MapLink')
+    from { configurations.compileOnly.collect { it.isDirectory() ? it : zipTree(it) } }
+}

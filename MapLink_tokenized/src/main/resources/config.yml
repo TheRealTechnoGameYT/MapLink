@@ -1,0 +1,7 @@
+# MapLink configuration (tokenized)
+# URL publique de BlueMap
+web-url: "http://123.45.67.89:8100/"
+# Emplacement du fichier JSON accessible par la webapp de BlueMap
+web-token-file: "plugins/BlueMap/web/maplink_tokens.json"
+# Durée (en secondes) pendant laquelle un token reste valide
+token-expiry-seconds: 300

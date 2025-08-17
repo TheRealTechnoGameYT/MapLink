@@ -1,0 +1,16 @@
+name: MapLink
+main: com.tonnom.maplink.MapLinkPlugin
+version: 1.0
+api-version: 1.13
+commands:
+  maplink:
+    description: Obtenir le lien BlueMap vers ta position
+    usage: /maplink [token|reload]
+    permission: maplink.use
+permissions:
+  maplink.use:
+    description: Permet d'utiliser la commande /maplink
+    default: true
+  maplink.reload:
+    description: Permet de recharger la configuration
+    default: op
